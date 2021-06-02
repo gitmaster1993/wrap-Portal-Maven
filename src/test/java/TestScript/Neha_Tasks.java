@@ -1,5 +1,4 @@
 package TestScript;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -180,9 +179,12 @@ public class Neha_Tasks extends BaseClass {
 			test.log(LogStatus.FAIL, "Email is not sent and not displayed");
 		}
 		
+		
+		
 		driver.switchTo().defaultContent();
 		test.log(LogStatus.PASS, test.addScreenCapture(FileUtils1.captureScreen(driver, "Email Sent Verify after add Task")));
-
+ 
+		
 		
 		
 	}

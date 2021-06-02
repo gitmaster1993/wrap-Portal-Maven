@@ -7,21 +7,20 @@ import java.util.Random;
 public class RandomClass {
 
 	static Random ran = new Random();
-	static int rNo = ran.nextInt(10000);//generating the random no from 1 to  10k
-	
-	
-	public static String randomName () {
-		
-		String randomNames= "Raja"+ rNo;
+	static int rNo = ran.nextInt(10000);// generating the random no from 1 to 10k
+
+	public static String randomName() {
+
+		String randomNames = "Raja" + rNo;
 		return randomNames;
-		
+
 	}
 
 	public static String randomProgramName() {
 		String randomNo = "Programs" + rNo;
 		return randomNo;
 	}
-	
+
 	public static String randomCarrierName() {
 		String randomNo = "Carriers" + rNo;
 		return randomNo;
@@ -36,18 +35,20 @@ public class RandomClass {
 
 	public static String randomClassCodeNumber() {
 		int rNo = ran.nextInt(35000);
-		String randomNo =""+rNo;
+		String randomNo = "" + rNo;
 		return randomNo;
 
 	}
-public static String randomClassCodeDescription() {
-		
+
+	public static String randomClassCodeDescription() {
+
 		String randomNo = "Class Codes" + rNo;
 		return randomNo;
 
 	}
+
 	public static String randomProgramCode() {
-		
+
 		String randomNo = "ProgCode" + rNo;
 		return randomNo;
 
@@ -64,6 +65,7 @@ public static String randomClassCodeDescription() {
 		return randomNo;
 
 	}
+
 	public static String randomDivisionCode() {
 		String randomNo = "Div" + rNo;
 		return randomNo;
@@ -75,25 +77,29 @@ public static String randomClassCodeDescription() {
 		return randomNo;
 
 	}
+
 	public static String randomTradeDescription() {
 		String randomNo = "Trades" + rNo;
 		return randomNo;
 
 	}
+
 	public static String randomTradeNO() {
 		String randomNo = "TRNO" + rNo;
 		return randomNo;
 
 	}
+
 	public static String randomTradeDescription_EX() {
 		String randomNo = "Trades Excluded" + rNo;
 		return randomNo;
 
 	}
+
 	public static String randomTradeNO_EX() {
 		Random ran1 = new Random();
 		int rNo1 = ran1.nextInt(99000);
-		String randomNo = ""+rNo1;
+		String randomNo = "" + rNo1;
 		return randomNo;
 
 	}
@@ -103,6 +109,7 @@ public static String randomClassCodeDescription() {
 		return randomNo;
 
 	}
+
 	public static String randomProject() {
 		String randomNo = "Sony Projects" + rNo;
 		return randomNo;
@@ -115,39 +122,40 @@ public static String randomClassCodeDescription() {
 		return randomNo;
 
 	}
-	
+
 	public static String randomProjectType() {
 		String randomNo = "ProjectTypeTest" + rNo;
 		return randomNo;
 	}
-	
+
 	public static String randomContactType() {
 
 		String randomNo = "ContactTypeTest" + rNo;
 		return randomNo;
 
 	}
+
 	public static String randomProjectCode() {
 
 		String randomNo = "PC" + rNo;
 		return randomNo;
 
 	}
-	
+
 	public static String randomContractorCompanyName() {
 
 		String randomNo = "Alex Company" + rNo;
 		return randomNo;
 
 	}
-	
+
 	public static String randomContractorCompanyNames() {
 
 		String randomNo = "TysonJohn" + rNo;
 		return randomNo;
 
 	}
-	
+
 	public static String randomFEIN() {
 
 		String randomNo = "FEIN" + rNo;
@@ -196,18 +204,23 @@ public static String randomClassCodeDescription() {
 		return randomElement;
 
 	}
-	
+
 	public static String randomTrade() {
 		// get a random string value from list
 		String randomElement = null;
 		Random rand = new Random();
-		List<String> givenList = Arrays.asList("Confectionery and Nut Stores", "Confectionery Manufacturing from Purchased Chocolate", "Confectionery Merchant Wholesalers", "Confectionery Merchant Wholesalers", "Construction", "Consumer Goods Rental",
-				"Consumer Lending", "Convenience Stores", "Convention and Trade Show Organizers", "Convention and Trade Show Organizers", "Corn Farming", "Correctional Institutions", "Cotton Farming", "Cotton Ginning", "Couriers and Express Delivery Services",
-				"Couriers and Messengers", "Courts", "Credit Bureaus", "Credit Unions", "Crop Production", "Curtain and Linen Mills", "Curtain and Linen Mills", "Custom Roll Forming",
-				"Cut and Sew Apparel Contractors", "Dance Companies", "Data Processing, Hosting, and Related Services", "Deep Sea Freight", "Department Stores", "Direct", "Electric", "Electrical",
-				"Farm", "Fire Protection", "Fishing", "Fitness", "Floor Covering Stores", "Florists", "Flour Milling",
-				"Fluid", "Folding Paperboard", "Food", "Footwear", "Formal", "Freight", "Fresh", "Frozen",
-				"Fruit", "Fuel", "Funds", "Furniture", "Gasoline", "General");
+		List<String> givenList = Arrays.asList("Confectionery and Nut Stores",
+				"Confectionery Manufacturing from Purchased Chocolate", "Confectionery Merchant Wholesalers",
+				"Confectionery Merchant Wholesalers", "Construction", "Consumer Goods Rental", "Consumer Lending",
+				"Convenience Stores", "Convention and Trade Show Organizers", "Convention and Trade Show Organizers",
+				"Corn Farming", "Correctional Institutions", "Cotton Farming", "Cotton Ginning",
+				"Couriers and Express Delivery Services", "Couriers and Messengers", "Courts", "Credit Bureaus",
+				"Credit Unions", "Crop Production", "Curtain and Linen Mills", "Curtain and Linen Mills",
+				"Custom Roll Forming", "Cut and Sew Apparel Contractors", "Dance Companies",
+				"Data Processing, Hosting, and Related Services", "Deep Sea Freight", "Department Stores", "Direct",
+				"Electric", "Electrical", "Farm", "Fire Protection", "Fishing", "Fitness", "Floor Covering Stores",
+				"Florists", "Flour Milling", "Fluid", "Folding Paperboard", "Food", "Footwear", "Formal", "Freight",
+				"Fresh", "Frozen", "Fruit", "Fuel", "Funds", "Furniture", "Gasoline", "General");
 		int numberOfElements = 4;
 		for (int i = 0; i < numberOfElements; i++) {
 			int randomIndex = rand.nextInt(givenList.size());
@@ -232,13 +245,13 @@ public static String randomClassCodeDescription() {
 		// TODO Auto-generated method stub
 		String randomNo = "SubjectName" + rNo;
 		return randomNo;
-		
+
 	}
-	
-public static String randomTaskSubject () {
-		
-		String randomNames= "Neha Task"+ rNo;
+
+	public static String randomTaskSubject() {
+
+		String randomNames = "Neha Task" + rNo;
 		return randomNames;
-		
+
 	}
 }
